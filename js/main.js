@@ -17,6 +17,5 @@ function checkStrLessThan(str, num) {
   return (typeof num === "number") && (num <= 0 || str.length <= Math.ceil(num));
 }
 
-console.log(getRandomByInterval(1, 10));
-
-console.log(checkStrLessThan('hello', 5));
+getRandomByInterval(1, 10);
+checkStrLessThan("hello", 5);
