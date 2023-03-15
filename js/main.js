@@ -14,8 +14,8 @@ function getRandomByInterval(begin, end) {
 
 function checkStrLessThan(str, num) {
   //если параметр num - отрицательный или 0, то значение функция возвращает true если параметр str - строка
-  return (typeof num === "number") && (num <= 0 || str.length <= Math.ceil(num));
+  return (typeof num === 'number') && (num <= 0 || str.length <= Math.ceil(num));
 }
 
 getRandomByInterval(1, 10);
-checkStrLessThan("hello", 5);
+checkStrLessThan('hello', 5);
