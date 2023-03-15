@@ -16,3 +16,7 @@ function checkStrLessThan(str, num) {
     //если параметр num - отрицательный или 0, то значение функция возвращает true если параметр str - строка
     return (typeof num === "number") && (num <= 0 || str.length <= Math.ceil(num));
 }
+
+console.log(getRandomByInterval(1,10));
+
+console.log(checkStrLessThan('hello', 5));
