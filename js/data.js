@@ -1,4 +1,4 @@
-import {getRandomByInterval} from "./util.js";
+import {getRandomByInterval} from './util.js';
 
 function generatePhotos() {
   const photos = [];
