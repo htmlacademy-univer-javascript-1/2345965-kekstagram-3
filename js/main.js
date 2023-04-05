@@ -17,5 +17,21 @@ function checkStrLessThan(str, num) {
   return (typeof num === 'number') && (num <= 0 || str.length <= Math.ceil(num));
 }
 
-getRandomByInterval(1, 10);
+function generatePhotos() {
+  const photos = [];
+
+  for (let i = 1; i <= 25; i++) {
+    const id = i;
+    const url = `photos/${i}.jpg`;
+    const description = `Описание фотографии ${i}`;
+    const likes = getRandomByInterval(15, 200);
+    const comments = getRandomByInterval(0, 200);
+
+    photos.push({ id, url, description, likes, comments });
+  }
+
+  return photos;
+}
+
+generatePhotos();
 checkStrLessThan('hello', 5);
