@@ -1,6 +1,7 @@
 import {generatePhotos} from './data.js';
 import {createPictureElement} from './picture.js';
 
+//Задание 7 часть 2
 const picturesData = generatePhotos();
 
 const picturesFragment = document.createDocumentFragment();
