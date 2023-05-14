@@ -24,5 +24,5 @@ uploadForm.addEventListener('submit', (event) => {
 });
 
 function validateComment(value) {
-  return checkMaxLength(value, maxCommentLength);
+  return checkMaxLength(value, maxCommentLength) && !checkMaxLength(value, 20);
 }
